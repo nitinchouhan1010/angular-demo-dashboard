@@ -1,0 +1,43 @@
+<header className="shadow-sm">
+  <nav className="navbar navbar-expand-lg navbar-light bg-light bg-white">
+    <div className="ml-sm-2">
+      <!-- <img src={ToggleImage} className="cursor-pointer" id="sidebarControl" onClick={toggle} alt="ToggleImage" /> -->
+    </div>
+    <button
+      className="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <form className="form-inline my-2 my-lg-0">
+        <i
+          className="fa-search fas font-size-12 position-relative text-black-50 search_img"
+        ></i>
+        <input
+          className="form-control ml-sm-4 border-radius-20 font-size-14 text-primary bg-light-blue border-light-blue search_input"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+      </form>
+      <ul className="navbar-nav ml-auto align-items-center">
+        <li className="nav-item active">
+          <a className="nav-link" href="#"
+            ><i className="far fa-bell fa-color font-size-20"></i
+          ></a>
+        </li>
+        <li className="nav-item user-profile">
+          <a className="nav-link" href="#">
+            <!-- <img src={UserPic} alt="UserPic" /> -->
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
