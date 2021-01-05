@@ -1,10 +1,15 @@
-<header className="shadow-sm">
-  <nav className="navbar navbar-expand-lg navbar-light bg-light bg-white">
-    <div className="ml-sm-2">
-      <!-- <img src={ToggleImage} className="cursor-pointer" id="sidebarControl" onClick={toggle} alt="ToggleImage" /> -->
+<header class="shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light bg-white">
+    <div class="ml-sm-2">
+      <img
+        src="assets/images/menu.png"
+        class="cursor-pointer"
+        id="sidebarControl "
+        onclick="((document.getElementById('sidebar').style.display == 'none') ? document.getElementById('sidebar').style.display = 'block' : document.getElementById('sidebar').style.display = 'none') && ((document.getElementById('mainPage').style.display == 'block') ? document.getElementById('mainPage').style.display = 'flex' : document.getElementById('mainPage').style.display = 'block')"
+      />
     </div>
     <button
-      className="navbar-toggler"
+      class="navbar-toggler"
       type="button"
       data-toggle="collapse"
       data-target="#navbarSupportedContent"
@@ -12,29 +17,31 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span className="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <form className="form-inline my-2 my-lg-0">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="form-inline my-2 my-lg-0">
         <i
-          className="fa-search fas font-size-12 position-relative text-black-50 search_img"
+          class="fa-search fas font-size-12 position-relative text-black-50 search_img"
+          style="left: 50px"
         ></i>
         <input
-          className="form-control ml-sm-4 border-radius-20 font-size-14 text-primary bg-light-blue border-light-blue search_input"
+          class="form-control ml-sm-4 border-radius-20 font-size-14 text-primary bg-light-blue border-light-blue search_input"
           type="search"
           placeholder="Search"
           aria-label="Search"
         />
       </form>
-      <ul className="navbar-nav ml-auto align-items-center">
-        <li className="nav-item active">
-          <a className="nav-link" href="#"
-            ><i className="far fa-bell fa-color font-size-20"></i
+
+      <ul class="navbar-nav ml-auto align-items-center">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"
+            ><i class="far fa-bell fa-color font-size-20"></i
           ></a>
         </li>
-        <li className="nav-item user-profile">
-          <a className="nav-link" href="#">
-            <!-- <img src={UserPic} alt="UserPic" /> -->
+        <li class="nav-item user-profile">
+          <a class="nav-link" href="#">
+            <img src="assets/images/Image27.png" />
           </a>
         </li>
       </ul>
