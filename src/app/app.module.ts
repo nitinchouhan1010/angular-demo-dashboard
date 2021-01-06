@@ -4,8 +4,6 @@ import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from "./app.component";
 import { HelloComponent } from "./hello.component";
-import { InventoryComponent } from "./inventory/inventory.component";
-import { TIcketsComponent } from "./tickets/tickets.component";
 import { HeaderComponent } from "./header/header.component";
 import { SidebarComponent } from "./sidebar/sidebar.component";
 
@@ -14,8 +12,6 @@ import { SidebarComponent } from "./sidebar/sidebar.component";
   declarations: [
     AppComponent,
     HelloComponent,
-    InventoryComponent,
-    TIcketsComponent,
     HeaderComponent,
     SidebarComponent
   ],
