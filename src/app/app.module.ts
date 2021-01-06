@@ -6,6 +6,10 @@ import { AppComponent } from "./app.component";
 import { HelloComponent } from "./hello.component";
 import { HeaderComponent } from "./header/header.component";
 import { SidebarComponent } from "./sidebar/sidebar.component";
+import { HomeComponent } from "./home/home.component";
+
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { NgxChartsModule } from "@swimlane/ngx-charts";
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -13,8 +17,12 @@ import { SidebarComponent } from "./sidebar/sidebar.component";
     AppComponent,
     HelloComponent,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    HomeComponent,
+    NgxChartsModule,
+    BrowserAnimationsModule
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
+ 
