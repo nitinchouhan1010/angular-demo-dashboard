@@ -14,7 +14,7 @@ export class SidebarComponent implements OnInit {
     this._toogleStatusSource.toogleStatus$.subscribe(status => {
       console.log(status);
 
-      if (status == "show") {
+      if (status == "flag") {
         this.show = !this.show;
       }
     });

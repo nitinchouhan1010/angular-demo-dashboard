@@ -13,8 +13,6 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {}
   toggle() {
     this.show = !this.show;
-    // console.log(this.show);
-
-    this._toogleStatusSource.sendToogle("show");
+    this._toogleStatusSource.sendToogle("flag");
   }
 }
