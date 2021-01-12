@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { ToogleService } from "../toogle.service";
 
 @Component({
   selector: "app-header",
@@ -7,12 +8,13 @@ import { Component, OnInit } from "@angular/core";
 })
 export class HeaderComponent implements OnInit {
   public show: boolean = false;
-
-  constructor() {}
+  constructor(private _toogleStatusSource: ToogleService) {}
 
   ngOnInit() {}
   toggle() {
     this.show = !this.show;
-    console.log(this.show);
+    // console.log(this.show);
+
+    this._toogleStatusSource.sendToogle("show");
   }
 }
