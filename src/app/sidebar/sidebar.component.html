@@ -6,20 +6,24 @@
 		<div class="sidebar-body sidebar-navs p-3">
 			<ul class="nav nav-tabs d-flex flex-column border-0">
 				<li class="nav-item" role="presentation">
-					<a class="border-radius-10 font-size-14 nav-link text-white py-3 d-flex" routerLink="/">
+					<a class="border-radius-10 font-size-14 nav-link text-white py-3 d-flex" [routerLink]="['/']"
+						routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+true}">
 						<img src="https://raw.githubusercontent.com/nitinchouhan1010/Images/main/dashboard.png" /> Dashboard</a>
 				</li>
 				<li class="nav-item" role="presentation">
 					<a class="border-radius-10 font-size-14 nav-link text-white py-3 d-flex"
-						routerLink="/company-profile">
+						[routerLink]="['/company-profile']" routerLinkActive="active">
 						<img src="https://raw.githubusercontent.com/nitinchouhan1010/Images/main/identification.png" /> Company Profile</a>
 				</li>
 				<li class="nav-item" role="presentation">
-					<a class="border-radius-10 font-size-14 nav-link text-white py-3 d-flex" routerLink="/Subscription">
+					<a class="border-radius-10 font-size-14 nav-link text-white py-3 d-flex"
+						[routerLink]="['/Subscription']" routerLinkActive="active">
 						<img src="https://raw.githubusercontent.com/nitinchouhan1010/Images/main/desktop.png" /> Subscription/Management</a>
 				</li>
 				<li class="nav-item" role="presentation">
-					<a class="border-radius-10 font-size-14 nav-link text-white py-3 d-flex" routerLink="/Inventory">
+					<a class="border-radius-10 font-size-14 nav-link text-white py-3 d-flex"
+						[routerLink]="['/Inventory']" routerLinkActive="active">
 						<img src="https://raw.githubusercontent.com/nitinchouhan1010/Images/main/shipping.png" /> Inventory</a>
 				</li>
 			</ul>

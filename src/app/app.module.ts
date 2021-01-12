@@ -12,7 +12,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { SubscriptionComponent } from "./subscription/subscription.component";
 import { CompanyProfileComponent } from "./company-profile/company-profile.component";
 import { InventoryComponent } from "./inventory/inventory.component";
-import { ToogleService } from './toogle.service';
+import { ToogleService } from "./toogle.service";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
