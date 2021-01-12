@@ -8,21 +8,25 @@ import { HeaderComponent } from "./header/header.component";
 import { SidebarComponent } from "./sidebar/sidebar.component";
 import { HomeComponent } from "./home/home.component";
 
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { NgxChartsModule } from "@swimlane/ngx-charts";
+import { Routes, RouterModule } from "@angular/router";
+import { SubscriptionComponent } from "./subscription/subscription.component";
+
+const routes: Routes = [
+  { path: "", component: HomeComponent },
+  { path: "Subscription", component: SubscriptionComponent }
+];
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, RouterModule.forRoot(routes)],
   declarations: [
     AppComponent,
     HelloComponent,
     HeaderComponent,
     SidebarComponent,
     HomeComponent,
-    NgxChartsModule,
-    BrowserAnimationsModule
+    SubscriptionComponent
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [RouterModule]
 })
 export class AppModule {}
- 
