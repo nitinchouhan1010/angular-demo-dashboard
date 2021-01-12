@@ -10,10 +10,14 @@ import { HomeComponent } from "./home/home.component";
 
 import { Routes, RouterModule } from "@angular/router";
 import { SubscriptionComponent } from "./subscription/subscription.component";
+import { CompanyProfileComponent } from "./company-profile/company-profile.component";
+import { InventoryComponent } from "./inventory/inventory.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
-  { path: "Subscription", component: SubscriptionComponent }
+  { path: "Subscription", component: SubscriptionComponent },
+  { path: "company-profile", component: CompanyProfileComponent },
+  { path: "Inventory", component: InventoryComponent }
 ];
 
 @NgModule({
@@ -24,7 +28,9 @@ const routes: Routes = [
     HeaderComponent,
     SidebarComponent,
     HomeComponent,
-    SubscriptionComponent
+    SubscriptionComponent,
+    CompanyProfileComponent,
+    InventoryComponent
   ],
   bootstrap: [AppComponent],
   exports: [RouterModule]
